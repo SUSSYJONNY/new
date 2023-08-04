@@ -1,0 +1,26 @@
+.bodyBackground 
+{
+    background-image:url(backg.jpg);
+    background-position:center;
+    background-size:cover;
+    text-align: center;
+}
+#myCanvas
+{
+    border-width:10px;
+    background-color: white; 
+    border-style:ridge;
+}
+
+h3
+{
+	width: 1000px;
+	background-color: white;
+	display: inline-block;
+}
+
+.container{
+margin-right: auto;
+margin-left: auto;
+display: flex;
+}
