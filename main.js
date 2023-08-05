@@ -9,8 +9,8 @@ blockImageHeight = 430;
 
 var blockImageObject = "";
 
-function newImage() {
-	fabric.Image.fromUrl(get_image, function (img) {
+function new_image(get_image) {
+	fabric.Image.fromURL(get_image, function (img) {
 		blockImageObject = img;
 
 		blockImageObject.scaleToWidth(blockImageWidth);
@@ -19,7 +19,7 @@ function newImage() {
 			top: blockY,
 			left: blockX
 		})
-		canvas.add(block_image_object);
+		canvas.add(blockImageObject);
 	});
 }
 
@@ -29,30 +29,31 @@ function myKeyDown(e) {
 	keyPressed = e.keyCode;
 	console.log(keyPressed);
 
-	if (keyPressed == '82') {
-		new_image(rr1.png);
-		console.log("r");
+	if (keyPressed == '69') {
+		blockX =10;
+		new_image("rr1.png");
+		console.log("e");
 	}
-	if (keyPressed == '71') {
+	if (keyPressed == '86') {
 		blockX = 200;
-		new_image(gr.png);
-		console.log("i");
+		new_image("gr.png");
+		console.log("v");
 	}
 
 	if (keyPressed == '89') {
 		blockX = 350;
-		new_image(yr.png);
+		new_image("yr.png");
 		console.log("a");
 	}
 	if (keyPressed == '80') {
 		blockX = 600;
-		new_image(pr.png);
-		console.log("v");
+		new_image("pr.png");
+		console.log("r");
 	}
 	if (keyPressed == '66') {
 		blockX = 700;
-		new_image(br.png);
-		console.log("a");
+		new_image("br.png");
+		console.log("i");
 	}
 
 }
